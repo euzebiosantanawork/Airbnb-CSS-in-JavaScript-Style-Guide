@@ -1,0 +1,40 @@
+//Nesting
+
+/*
+leave a black like btween adjacent blocks at the same indetation level
+
+Why? The whitespace improves readbility and reduces the likehood
+of merge conflits
+*/
+
+//?/bad
+
+{
+    bigBang: {
+        display:'inline-block',
+        '::before': {
+            content"''",
+        },
+    },
+    universe: {
+        border: 'none',
+    },
+},
+
+//good 
+
+{
+
+    bigBang: {
+        display: 'inline-block',
+
+        '::before' {
+            content: "'",
+        },
+
+    },
+    
+    universe: {
+        border:'none',
+    },
+}
